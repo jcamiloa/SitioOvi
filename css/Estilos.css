@@ -113,7 +113,7 @@
 		
 		border: 0px solid;
 		position:relative;
-		overflow:hidden
+		overflow:hidden;
 	}
 	#menu{
 		text-align:right;
@@ -396,4 +396,20 @@ li > a:only-child:after { content: ''; }
 		width: 94%;
 	}
 
+}
+table{
+	margin:0 auto;
+	width:70%;
+	
+}
+tr{
+	margin: 15px;
+	padding: 15px;
+}
+td{
+	background-color:#243153;
+	margin: 15px;
+	padding: 15px;
+	border-radius:10px;
+	width:200px;
 }
