@@ -1,0 +1,509 @@
+	*{
+	  margin: 0;
+	  padding: 0;
+	}
+	header{
+	  font-family: Helvetica;
+	  width: 480px;
+	  margin: 0 auto;
+	}
+	
+	a {  
+	  transition: transform .3s ease-out;
+	  display: inline-block;
+	  
+	  
+	}
+	a:hover {
+	  transform: translate(0, -5px);
+	}
+	a:links {
+		transition:2 seg;
+	}
+	
+	ul{
+	  list-style: none;
+	}
+	@media (min-width: 1050px) {
+	#menu li>a{
+	  background-color: #d4a402;
+	  color: white;
+	  padding: 10px;
+	  display: block;
+	  text-decoration: none;
+	  padding: .6em 4em;
+	  min-width:140px;
+	  
+	  
+	}
+	
+	
+	#centro-cuerpo{
+		width:80%;
+		margin: 10px;
+		border: 0px solid;
+		float: right;
+		margin-left:0px;
+		overflow:scroll;
+		height:1000px;
+	}
+	
+	}
+	
+	@media (max-width: 1051px) {
+	#menu li>a{
+	  background-color: #BF2200;
+	  color: white;
+	  padding: 10px;
+	  display: block;
+	  text-decoration: none;
+	  padding: .6em 4em;
+	  min-width:50px;
+	}
+	
+	#centro-cuerpo{
+		width:75%;
+		margin: 10px;
+		border: 0px solid;
+		float: right;
+		margin-left:0px;
+		position:relative;
+		overflow:scroll;
+	}
+	
+	}
+	
+	#menu li>a:hover{
+	  color: #333;
+	  background-color: #e7b200;
+	}
+	#menu>li{
+	  float: left;
+	  text-align:center
+	}
+	#menu>li>ul{
+	  display: none;
+	}
+	#menu>li:hover>ul {
+	  display:block;
+	}
+
+	#encabezado{
+		width:100%;
+		height:110px;
+		border: 0px solid;
+	}
+	#encabe-infor{
+		background: #e8e8e8;
+		display: block;
+		margin: 0;
+		padding: .3em 0;
+		width: 100%;
+		height:30px;
+		padding:0px;
+		text-align:right;
+	}
+	#titulo{
+		margin:30px;
+		font-size:32px;
+	}
+	#menus{
+		width:100%;
+		height:60px;
+		border: 0px solid;
+		position:absolute;
+		
+		z-index:99;
+	}
+	#menu{
+		text-align:right;
+		
+		
+	}
+	#cuerpo{
+		margin-top:70px;
+		width:100%;
+		min-height:200px;
+		border: 0px solid;
+		overflow:hidden;
+	}
+	#izquierda-cuerpo{
+		margin:10px;
+		width:15%;
+		height:100%;
+		border: 0px solid;
+		float:left;
+		overflow:hidden;
+		color: #FFF;
+		background-color:#e8e8e8;
+		padding:10px;	
+		
+		
+	}
+	#consultar_index{
+		padding: 10px 10px 15px;
+		background-color: #243153;
+		color: #ffffff;
+		border-radius: 5px;
+		
+	}
+	
+	#footer{
+		margin-top:10px;
+		width:100%;
+		height:70px;
+		border: 0px solid;
+		bottom: 0;
+		position:relative;
+		margin: 0;
+		padding: 0;
+		background-color: #d4a402;
+	}		
+	#titulo{
+		font-size:20px;
+		font-weight: bold;
+	}
+	#contenido{
+		margin:10px;
+	
+	}
+	#body{
+		line-height: 32px;
+		font-size: 16px;
+		margin: 0;
+		padding: 0;
+		word-wrap:break-word !important;
+		font-family: 'Open Sans', sans-serif;
+		
+	}
+	#p{
+		text-align:justify;
+	}
+	
+	
+	
+
+	#container {
+		margin: 0 auto;
+		max-width: 890px;
+	}
+
+	.toggle,
+	[id^=drop] {
+		display: none;
+	}
+
+
+	nav { 
+		margin-bottom:300px;
+		padding: 0;
+		background-color: #d4a402;
+		position:absolute;
+		width: 100%;
+	}
+
+		
+	/* Since we'll have the "ul li" "float:left"
+	 * we need to add a clear after the container. */
+
+	nav:after {
+		content:"";
+		display:table;
+		clear:both;
+	}
+
+	/* Removing padding, margin and "list-style" from the "ul",
+	 * and adding "position:reltive" */
+	nav ul {
+		float: right;
+		padding:0;
+		margin:0;
+		list-style: none;
+		position: relative;
+		}
+		
+	/* Positioning the navigation items inline */
+	nav ul li {
+		margin: 0px;
+		display:inline-block;
+		float: left;
+		background-color: #d4a402;
+		}
+
+	/* Styling the links */
+	nav a {
+		display:block;
+		padding:14px 20px;	
+		color:#FFF;
+		font-size:17px;
+		text-decoration:none;
+	}
+
+
+	nav ul li ul li:hover { background: #000000; }
+
+	/* Background color change on Hover */
+	nav a:hover { 
+		background-color: #e7b200; 
+	  color: #333;
+	}
+
+	/* Hide Dropdowns by Default
+	 * and giving it a position of absolute */
+	nav ul ul {
+		display: none;
+		position: absolute; 
+	  
+		/* has to be the same number as the "line-height" of "nav a" */
+		top: 60px; 
+	}
+		
+	/* Display Dropdowns on Hover */
+	nav ul li:hover > ul {
+		display:inherit;
+	}
+		
+	/* Fisrt Tier Dropdown */
+	nav ul ul li {
+		width:170px;
+		float:none;
+		display:list-item;
+		position: relative;
+	}
+	nav ul ul ul li {
+		position: relative;
+		top:-60px;
+		left:170px; 
+	}
+
+		
+	li > a:after { content:  ' +'; }
+	li > a:only-child:after { content: ''; }
+
+
+	/* Media Queries
+	--------------------------------------------- */
+
+	@media all and (max-width : 768px) {
+
+		#logo {
+			display: none;
+			padding: 0;
+			width: 100%;
+			text-align: center;
+			float: none;
+			position:fixed;
+		}
+
+		nav {
+			margin: 0;
+			margin-bottom:300px;
+			position:absolute;
+		}
+
+		/* Hide the navigation menu by default */
+		/* Also hide the  */
+		.toggle + a,
+		.menu {
+			display: none;
+		}
+
+		/* Stylinf the toggle lable */
+		.toggle {
+			display: block;
+			background-color: #d4a402;
+			padding:14px 20px;	
+			color:#FFF;
+			font-size:17px;
+			text-decoration:none;
+			border:none;
+		}
+
+		.toggle:hover {
+			background-color: #e7b200;
+		}
+
+		/* Display Dropdown when clicked on Parent Lable */
+		[id^=drop]:checked + ul {
+			display: block;
+		}
+		
+		
+
+		/* Change menu item's width to 100% */
+		nav ul li {
+			display: block;
+			width: 100%;
+			}
+
+		nav ul ul .toggle,
+		nav ul ul a {
+			padding: 0 40px;
+		}
+
+		nav ul ul ul a {
+			padding: 0 80px;
+		}
+
+		nav a:hover,
+		nav ul ul ul a {
+			background-color: #e7b200;
+		}
+	  
+		nav ul li ul li .toggle,
+		nav ul ul a,
+	  nav ul ul ul a{
+			padding:14px 20px;	
+			color:#FFF;
+			font-size:17px; 
+			width:300px;
+		}
+	  
+	  
+		nav ul li ul li .toggle,
+		nav ul ul a {
+			background-color: #e7b200; 
+		}
+
+		/* Hide Dropdowns by Default */
+		nav ul ul {
+			float: right;
+			position:absolute;
+			color: #d4a402;
+			/* has to be the same number as the "line-height" of "nav a" */
+		}
+			
+		/* Hide menus on hover */
+		nav ul ul li:active > ul,
+		nav ul li:active > ul {
+			display: inherit;
+		}
+			
+		nav ul ul li {
+			display: block;
+			width: 100%;
+		}
+		
+		
+
+		nav ul ul ul li {
+			position: static;
+
+		}
+
+	}
+
+	@media all and (max-width : 330px) {
+
+		nav ul li {
+			display:block;
+			width: 94%;
+		}
+
+	}
+	table{
+		margin:0 auto;
+		width:70%;
+		
+	}
+	tr{
+		margin: 15px;
+		padding: 15px;
+	}
+	td{
+		background-color:#243153;
+		margin: 15px;
+		padding: 15px;
+		border-radius:10px;
+		width:200px;
+	}
+	
+	#actividad{
+		padding:20px;
+		background-color:#C9D2E7;
+		border-radius:20px;
+	}
+
+	.container {
+	  display: block;
+	  position: relative;
+	  padding-left: 35px;
+	  margin-bottom: 12px;
+	  cursor: pointer;
+	  font-size: 16px;
+	  -webkit-user-select: none;
+	  -moz-user-select: none;
+	  -ms-user-select: none;
+	  user-select: none;
+	}
+
+	.container input {
+	  position: absolute;
+	  opacity: 0;
+	  cursor: pointer;
+	  height: 0;
+	  width: 0;
+	}
+
+	.checkmark {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  height: 25px;
+	  width: 25px;
+	  background-color: #eee;
+	  border-radius: 50%;
+	}
+
+	.container:hover input ~ .checkmark {
+	  background-color: #ccc;
+	}
+
+	.container input:checked ~ .checkmark {
+	  background-color: #243153;
+	}
+
+	.checkmark:after {
+	  content: "";
+	  position: absolute;
+	  display: none;
+	}
+
+	.container input:checked ~ .checkmark:after {
+	  display: block;
+	}
+
+	.container .checkmark:after {
+	  top: 9px;
+	  left: 9px;
+	  width: 8px;
+	  height: 8px;
+	  border-radius: 50%;
+	  background: white;
+	}
+	
+	
+	.button {
+    
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+	}
+
+	.button1 {
+		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+		background-color: #4CAF50; 
+	}
+	.button2 {
+		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+		background-color: #d4a402; 
+	}
+
